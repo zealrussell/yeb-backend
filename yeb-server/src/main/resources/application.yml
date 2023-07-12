@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.15.191.2:3306/yebdb?useSSL=false&serverTimezone=Asia/Shanghai
+    username: zeal
+    password: 1234
+    hikari:
+      pool-name: DateHikariCP
+mybatis-plus:
+  type-aliases-package: com.zeal.server.pojo
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+      map-underscore-to-camel-case: false
+logging:
+  level:
+    com.zeal.server.mapper: debug
+
+jwt:
+  secrete:
