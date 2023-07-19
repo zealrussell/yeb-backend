@@ -2,4 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zeal.server.mapper.RoleMapper">
 
+    <resultMap id="BaseResultMap" type="Role">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="name_zh" property="nameZh"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, name, remark
+    </sql>
+
+    <select id="getRoles" resultType="Role">
+        SELECT
+            r.id,
+            r.name
+        FROM
+            t_role r
+            LEFT JOIN t_admin_role ar ON ar.roleId = r.id
+        WHERE
+            ar.adminId = #{adminId}
+    </select>
+
 </mapper>

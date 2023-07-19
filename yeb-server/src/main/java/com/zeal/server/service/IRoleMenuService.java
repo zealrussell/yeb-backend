@@ -2,6 +2,7 @@ package com.zeal.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zeal.server.entity.RoleMenu;
+import com.zeal.server.entity.vo.RespBean;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.zeal.server.entity.RoleMenu;
  */
 public interface IRoleMenuService extends IService<RoleMenu> {
 
+    RespBean updateMenuRole(Integer rid, Integer[] mids);
 }

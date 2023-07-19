@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zeal.server.mapper.DepartmentMapper">
+    <resultMap id="BaseResultMap" type="Department">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="parentId" property="parentId"/>
+        <result column="depPath" property="depPath"/>
+        <result column="enabled" property="enabled"/>
+        <result column="isParent" property="isParent"/>
+    </resultMap>
+
+    <resultMap id="DepartmentWithChildren" type="Department" extends="BaseResultMap">
+        <collection property="children" ofType="Department" column="id"
+                    select="com.zeal.server.mapper.DepartmentMapper.getAllDepartments"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, name, parentId, depPath, enabled, isParent
+    </sql>
+    <!--获取所有部门  -->
+    <select id="getAllDepartments" resultMap="BaseResultMap">
+        SELECT
+            <include refid="Base_Column_List"></include>
+        FROM
+            t_department
+        WHERE parentId = #{parentId}
+    </select>
+
+    <!--    添加部门-->
+    <select id="addDep" statementType="CALLABLE">
+        CALL addDep(#{name, mode=IN, jdbcType=VARCHAR}, #{parentId, mode=IN, jdbcType=INTEGER},#{enabled,mode=IN,jdbcType=BOOLEAN}
+            ,#{result, mode=OUT,jdbcType=INTEGER}, #{id, mode=OUT,jdbcType=INTEGER})
+    </select>
+
+    <!--    删除部门-->
+    <select id="deleteDep" statementType="CALLABLE">
+        CALL deleteDep(#{id, mode=IN, jdbcType=INTEGER},#{result, mode=OUT,jdbcType=INTEGER})
+    </select>
 
 </mapper>

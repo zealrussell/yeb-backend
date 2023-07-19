@@ -3,6 +3,8 @@ package com.zeal.server.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.zeal.server.entity.Role;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +15,10 @@ import com.zeal.server.entity.Role;
  */
 public interface RoleMapper extends BaseMapper<Role> {
 
+    /**
+     * 根据用户id查询菜单列表
+     * @param adminId 用户id
+     * @return 菜单列表
+     */
+    List<Role> getRoles(Integer adminId);
 }

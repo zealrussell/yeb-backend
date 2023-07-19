@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cc70509-cca5-4023-be2a-4cdec2f5e706" name="更改" comment="mybatisplus生成代码成功">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/CaptchaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/MainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/filter/CustomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/filter/CustomUrlDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/security/MySecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/security/RestAuthorizationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/CaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/PermissController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/ILoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/MyUserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-generator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-generator/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/JoblevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/JoblevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/PositionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/vo/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/vo/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/vo/RespBeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/entity/vo/RespBeanEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/RoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/mapper/RoleMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IDepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IDepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IRoleMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/IRoleMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/RoleMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/RoleMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/utils/JWTTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/utils/JWTTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMenuMapper.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zzxnow@foxmail.com" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Work\Env\maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Env/maven" />
+        <option name="userSettingsFile" value="C:\Work\Env\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+    <option name="vmOptions" value="-Darchetype=Internal -DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectId" id="2SPxg6CQSX8Oz3Ave2Anpnnwnz1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore_missing_gitignore": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Work/TestJava/yeb-springboot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "spring.configuration.checksum": "c5615b7e299c0c70cab8990b1a305ccc",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "java.sql.Driver"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zeal.server.config.filter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.YebApplication">
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="CodeGeneratorApplicationTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yeb-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zeal.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zeal.generator" />
+      <option name="MAIN_CLASS_NAME" value="com.zeal.generator.CodeGeneratorApplicationTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerApplicationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yeb-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zeal.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zeal.server" />
+      <option name="MAIN_CLASS_NAME" value="com.zeal.server.ServerApplicationTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YebApplicationTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yeb-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zeal.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zeal.server" />
+      <option name="MAIN_CLASS_NAME" value="com.zeal.server.YebApplicationTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SpringSecurityDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zeal.springsecuritydemo.SpringSecurityDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="yeb-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zeal.server.YebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zeal.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.YebApplication" />
+        <item itemvalue="HTTP 请求.generated-requests | #3" />
+        <item itemvalue="JUnit.YebApplicationTest.contextLoads" />
+        <item itemvalue="JUnit.CodeGeneratorApplicationTest.contextLoads" />
+        <item itemvalue="JUnit.ServerApplicationTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1cc70509-cca5-4023-be2a-4cdec2f5e706" name="更改" comment="" />
+      <created>1689062125885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689062125885</updated>
+      <workItem from="1689062127101" duration="10390000" />
+      <workItem from="1689124738806" duration="7180000" />
+      <workItem from="1689131936242" duration="18667000" />
+      <workItem from="1689213901441" duration="31000" />
+      <workItem from="1689215708121" duration="4751000" />
+      <workItem from="1689221283076" duration="278000" />
+      <workItem from="1689221580840" duration="731000" />
+      <workItem from="1689222321658" duration="493000" />
+      <workItem from="1689223332267" duration="148000" />
+      <workItem from="1689223491012" duration="754000" />
+      <workItem from="1689255037271" duration="6715000" />
+      <workItem from="1689337490378" duration="193000" />
+      <workItem from="1689337714146" duration="16295000" />
+      <workItem from="1689470038113" duration="9205000" />
+      <workItem from="1689512337579" duration="214000" />
+      <workItem from="1689664538422" duration="3625000" />
+    </task>
+    <task id="LOCAL-00001" summary="mybatisplus生成代码成功">
+      <option name="closed" value="true" />
+      <created>1689128559184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689128559184</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="mybatisplus生成代码成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatisplus生成代码成功" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/service/impl/LoginServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/yeb-server/src/main/java/com/zeal/server/controller/MenuController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.RequestFacade" memberName="request" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

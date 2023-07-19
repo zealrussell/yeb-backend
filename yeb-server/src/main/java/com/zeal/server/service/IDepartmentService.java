@@ -2,6 +2,9 @@ package com.zeal.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zeal.server.entity.Department;
+import com.zeal.server.entity.vo.RespBean;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.zeal.server.entity.Department;
  */
 public interface IDepartmentService extends IService<Department> {
 
+    List<Department> getAllDepartments();
+
+    RespBean addDep(Department dep);
+
+    RespBean deleteDep(Integer id);
 }

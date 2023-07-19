@@ -53,8 +53,12 @@ public enum RespBeanEnum {
     UPDATE_FILED(500101, "修改失败"),
     DELETE_FILED(500102, "删除失败"),
     IMPORT_FILED(500103, "导入失败"),
+
+    DELETE_HAVE_FOR_FILED(500104, "该条数据有关联数据,无法修改或删除"),
     SEQ_INSERT_FILED(500105, "失败,因索引不可重复"),
-    DELETE_HAVE_FOR_FILED(500104, "该条数据有关联数据,无法修改或删除");
+    DATABASE_FILED(500106, "数据库异常，操作失败！");
+
+
 
     private final Integer code;
 

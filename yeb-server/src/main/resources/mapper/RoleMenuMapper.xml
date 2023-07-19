@@ -2,4 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zeal.server.mapper.RoleMenuMapper">
 
+    <resultMap id="BaseResultMap" type="RoleMenu">
+        <id column="id" property="id"/>
+        <result column="rid" property="rid"/>
+        <result column="mid" property="mid"/>
+    </resultMap>
+
+    <insert id="insertRecord">
+        insert into t_role_menu (roleId, menuId)
+        values
+        <foreach collection="mids" item="mid" separator=",">
+            (#{item.rid}, #{item.mid})
+        </foreach>
+    </insert>
+
 </mapper>

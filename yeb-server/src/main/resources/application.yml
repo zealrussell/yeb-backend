@@ -1,15 +1,23 @@
+ip: 106.15.191.2
 server:
   port: 8081
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://106.15.191.2:3306/yebdb?useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://106.15.191.2/yebdb?useSSL=false&serverTimezone=Asia/Shanghai
     username: zeal
     password: 1234
     hikari:
       pool-name: DateHikariCP
+  data:
+    redis:
+      host: ${ip}
+      port: 6379
+      password: 1234
+      timeout: 10000ms
+
 mybatis-plus:
-  type-aliases-package: com.zeal.server.pojo
+  type-aliases-package: com.zeal.server.entity
   mapper-locations: classpath*:/mapper/*.xml
   configuration:
       map-underscore-to-camel-case: false
@@ -18,4 +26,11 @@ logging:
     com.zeal.server.mapper: debug
 
 jwt:
-  secrete:
+  #JWT 存储的请求头
+  tokenHeader: Authorization
+  #JWT 加解密使用的秘钥
+  secret: yeb-secret
+  #JWT 的超期时间(60*60*24)
+  expiration: 86400
+  #JWT 负载中拿到的开头
+  tokenHead: Bearer

@@ -1,14 +1,18 @@
 package com.zeal.server.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -72,6 +76,8 @@ public class Admin implements Serializable, UserDetails {
      */
     private String remark;
 
+    @TableField(exist = false)
+    private List<Role> roles;
 
     @Override
     public String toString() {
@@ -91,7 +97,13 @@ public class Admin implements Serializable, UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        List<SimpleGrantedAuthority> collect = roles
+                .stream()
+                .map(role ->
+                        new SimpleGrantedAuthority(role.getName()))
+                .toList();
+
+        return collect;
     }
 
     @Override

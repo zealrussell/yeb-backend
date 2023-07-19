@@ -1,0 +1,36 @@
+GET http://localhost:8081/captcha/getCaptcha
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-12T203329.200.jpg
+
+###
+
+GET http://localhost:8081/captcha/getCaptcha
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-12T203022.200.json
+
+###
+
+GET http://localhost:8081/captcha/getCaptcha
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-12T201704.200.json
+
+###
+
+GET http://localhost:8081/captcha/getCaptcha
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-12T195046.200.json
+
+###
+

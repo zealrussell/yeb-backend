@@ -3,6 +3,8 @@ package com.zeal.server.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -16,6 +18,7 @@ import java.time.LocalDateTime;
  * @since 2023-07-11
  */
 @TableName("t_position")
+@Data
 public class Position implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -28,41 +31,11 @@ public class Position implements Serializable {
      */
     private String name;
 
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "Asia/Shanghai")
     private LocalDateTime createDate;
 
     private Boolean enabled;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public LocalDateTime getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
-    }
-
-    public Boolean getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(Boolean enabled) {
-        this.enabled = enabled;
-    }
 
     @Override
     public String toString() {

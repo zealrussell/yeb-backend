@@ -1,10 +1,13 @@
 package com.zeal.server.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -15,6 +18,7 @@ import java.io.Serializable;
  * @since 2023-07-11
  */
 @TableName("t_menu")
+@Data
 public class Menu implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -67,85 +71,17 @@ public class Menu implements Serializable {
      */
     private Boolean enabled;
 
-    public Integer getId() {
-        return id;
-    }
+    /**
+     * 子菜单
+     */
+    @TableField(exist = false)
+    private List<Menu> children;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    public String getComponent() {
-        return component;
-    }
-
-    public void setComponent(String component) {
-        this.component = component;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getIconCls() {
-        return iconCls;
-    }
-
-    public void setIconCls(String iconCls) {
-        this.iconCls = iconCls;
-    }
-
-    public Boolean getKeepAlive() {
-        return keepAlive;
-    }
-
-    public void setKeepAlive(Boolean keepAlive) {
-        this.keepAlive = keepAlive;
-    }
-
-    public Boolean getRequireAuth() {
-        return requireAuth;
-    }
-
-    public void setRequireAuth(Boolean requireAuth) {
-        this.requireAuth = requireAuth;
-    }
-
-    public Integer getParentId() {
-        return parentId;
-    }
-
-    public void setParentId(Integer parentId) {
-        this.parentId = parentId;
-    }
-
-    public Boolean getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(Boolean enabled) {
-        this.enabled = enabled;
-    }
+    /**
+     * 角色列表
+     */
+    @TableField(exist = false)
+    private List<Role> roles;
 
     @Override
     public String toString() {

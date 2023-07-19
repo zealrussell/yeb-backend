@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ import java.util.Map;
  * @version 1.0
  * @since 2023/7/11 20:38
  */
+@Component
 public class JWTTokenUtil {
     private static final String CLAIM_KEY_USERNAME = "sub";
     private static final String CLAIM_KEY_CREATED = "created";
